@@ -1,3 +1,4 @@
+ <? include_once 'header.php'; ?> 
 <? include_once('bd.php');
  
 	$name = $_POST['login'];
@@ -12,33 +13,29 @@
 					SetCookie("log", $name);
 					SetCookie("pas", $arr['pas']);
 					header("Location: game.php");
-				}else
-				echo "<div id='eror'>Пароль не правельний";
- 					
-		}else
-		echo "<div id='eror'>Даний логін не існує</div>";
 	}
-
-
  ?>
-
- <? include_once 'header.php'; ?> 
-<div class="container">
-
- <div class="image"><img src="../assets/image/осада.png" alt="">
-
- 	<div class="main_content">
- 		<p>
- 			Браузерная Онлайн Игра
- 		</p>
- 		<form action="log.php"
- 		method="POST">
- 		<input class="buttons" type="text" name="login" placeholder="Логин" required />
- 		<input class="buttons" type="password" name="password" placeholder="Пароль" required />
- 		<input type="submit" class="buttons" value="Ввійти"> 
- 		</form>
- 	</div>
- </div>
-</div>
+<section class="container">
+    <div class="login">
+      <h1>Log</h1>
+      <form method="post" action="log.php">
+        <p>
+      	<input type="text" name="login" value="" placeholder="Username" required></p>
+      	 <? if(count($arr) > 0)
+      	 {
+      	 	echo "Даний логін не існує" ;
+      	 }
+      	 ?>
+        <p>
+        <input type="password" name="password" value="" placeholder="Password" required></p>
+        <? if($password != $arr['pas'])
+        {
+		echo "Пароль не правельний" ;
+    	}
+        ?>
+        <p class="submit"><input type="submit" name="commit" value="Login"></p>
+      </form>
+    </div>
+  </section>			
 <? include_once 'footer.php'; ?>
 	
