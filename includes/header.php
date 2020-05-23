@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Dream Team</title>
+	<link rel="stylesheet" href="../assets/css/styleform.css">
 	<link rel="stylesheet" href="../assets/css/style.css">
 	<link rel="stylesheet" href="../assets/css/style1.css">
 </head>
