@@ -7,34 +7,34 @@
 .container{
 	position: relative;
 	display: block;
-	margin: 0 auto;
-	background: #666633	;
-	width: 800px;
+	background: #5F9EA0	;
+	width: 100%;
+	
 }
 body{
   background: #663300;
-  background-image: url(../image/bvalir.png);
+  background-image: url(https://i04.kanobu.ru/r/bf3ca016e300fae5d03bac80bb2dab7f/1040x-/u.kanobu.ru/editor/images/19/be088b17-d75b-40ba-a721-6c2d7f6ea70b.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 .image{
 	margin-top: 150px;
 }	
 .main_content{
-	padding: 10px 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
 }
-.main_content > p{
-	text-align: center;
-	margin: 5px 0;
-}
+
 .buttons{
-	background: linear-gradient(to top,#CC0000, #FF3300);
-	width: 200px;
+	background: linear-gradient(to top,#00FF0000, #7FFFD4 );
+	width: 150px;
 	height: 50px;
 	box-shadow: 0 0 15px rgba(0,0,0,1.5);
 	display: block;
-	margin: 15px auto;
+	margin: 1%;
 	text-align: center;
 	line-height: 50px;
 	text-decoration: none;
@@ -46,3 +46,75 @@ body{
 	text-align:center;
 	padding: 0.7%;
 }
+
+
+.down{
+	background: linear-gradient(to top,#00FF0000, #7FFFD4 );
+	box-shadow: 0 0 15px rgba(0,0,0,1.5);
+	display: block;
+	margin: 1%;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  nav a {
+	display: block;
+	text-decoration: none;
+	outline: none;
+	transition: .4s ease-in-out;
+  }
+
+
+  
+  .topmenu > li {
+	display: inline-block;
+	position: relative;
+  }
+  .topmenu > li > a {
+	font-family: 'Exo 2', sans-serif;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 30px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+  }
+  
+  .down:after {
+	content: "\f107";
+	margin-left: 8px;
+	font-family: FontAwesome;
+  }
+  .topmenu li a:hover { color: white; }
+  .submenu {
+	background: #5F9EA0;
+	border: 2px solid #003559;
+	position: absolute;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 5;
+	width: 150px;
+	transform: perspective(600px) rotateX(-90deg);
+	transform-origin: 0% 0%;
+	transition: .6s ease-in-out;
+  }
+  .topmenu > li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+	transform: perspective(600px) rotateX(0deg);
+  }
+  .submenu li a {
+	color: white;
+	font-size: 13px;
+	line-height: 36px;
+	padding: 0 25px;
+	font-family: 'Kurale', serif;
+  }
