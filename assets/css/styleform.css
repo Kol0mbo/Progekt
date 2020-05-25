@@ -72,9 +72,14 @@ table {
   margin: 0 -1px;
 }
 
+.container1 {
+  margin: 100px auto;
+  width: 640px;
+}
+
 .login {
   position: relative;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 20px 20px 20px;
   width: 310px;
   background: white;
