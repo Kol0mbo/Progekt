@@ -14,8 +14,14 @@
 					SetCookie("pas", $arr['pas']);
 					header("Location: game.php");
 	}
+}
+}
  ?>
-<section class="container">
+ <a href="regis.php" class="buttons"> Зареєстуватися </a>
+ <a href="log.php" class="buttons"> Войти </a>
+ </div>
+</div>
+<section class="container1">
     <div class="login">
       <h1>Log</h1>
       <form method="post" action="log.php">
@@ -38,4 +44,3 @@
     </div>
   </section>			
 <? include_once 'footer.php'; ?>
-	
