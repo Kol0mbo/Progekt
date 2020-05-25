@@ -16,7 +16,7 @@
 <div class="main_content">
 		<nav>
 			<ul class="topmenu">
-			<li><a href="" class="down">Game</a>
+			<li><a href="../includes" class="down">Game</a>
 			<ul class="submenu">
 			<li><a href="">CS:GO</a></li>
 			<li><a href="">Dota 2</a></li>
