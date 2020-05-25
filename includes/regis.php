@@ -3,10 +3,6 @@
 	$name = $_POST['login'];
 	$password = $_POST['password'];
 	$password1 = $_POST['password1'];
-	if (isset($_POST['v'])){
-    $Sex = $_POST['v'];
-    if($Sex=="v1")
-    {
     	if($name != null){
 		if($password == $password1){
 			$arr = $mysqli->query("SELECT * FROM `base` WHERE `log`='".$name."'");
@@ -23,14 +19,16 @@
 	}
     	
     }
-}
 	if($_COOKIE["log"] != null && $_COOKIE["pas"] != null) {
 		header("Location: game.php");
 	}
-}
  ?>
 <? include_once 'header.php'; ?> 
-<section class="container">
+<a href="regis.php" class="buttons"> Зареєстуватися </a>
+<a href="log.php" class="buttons"> Войти </a>
+</div>
+</div>
+<section class="container1">
     <div class="login">
       <h1>Registration</h1>
       <form method="post" action="log.php">
