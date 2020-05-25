@@ -22,10 +22,3 @@
 			</ul>
 			</li>
 		</nav>
-		
- 	<a href="includes/regis.php" class="buttons"> Зареєстуватися </a>
- 	<a href="includes/log.php" class="buttons"> Войти </a>
-	 
-</div>
-</div>
-
