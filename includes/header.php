@@ -6,6 +6,9 @@
 	<link rel="stylesheet" href="../assets/css/styleform.css">
 	<link rel="stylesheet" href="../assets/css/style.css">
 	<link rel="stylesheet" href="../assets/css/style1.css">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../assets/css/reset.css">
+	<link rel="stylesheet" href="../assets/css/stylemenu.css"> 
 </head>
 <body>
 <div class="container">
